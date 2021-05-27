@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1622076284 source:c:\users\elias\documents\meusprojetos\exercicioslinguagemc_ifsp\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1622076036 source:c:\users\elias\documents\meusprojetos\exercicioslinguagemc_ifsp\soma.c
+	<stdio.h>
+	<stdlib.h>
+
