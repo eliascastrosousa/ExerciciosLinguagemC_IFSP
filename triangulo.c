@@ -17,15 +17,20 @@ scanf("%d", &z);
 
 if((x < y+z) && (y < x+z) && (z < x+y)){
     printf("Este é um triangulo: ");
+
     if ((x == y) && (y == z) && (z == x)){
         printf("Equilatero! ");
-    }else if ((x != y) && (y != z) && (z != x)) {
+    }
+    else if ((x != y) && (y != z) && (z != x)) {
         printf("Escaleno! ");
     }
+
     else {
         printf("isoceles!");
+    }
+
  }
- }else {
+ else {
     printf("Não é um triangulo! ");
  }
 
