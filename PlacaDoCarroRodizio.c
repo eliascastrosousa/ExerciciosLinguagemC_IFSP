@@ -14,9 +14,9 @@ switch (num){
 
 case 0: printf("Não circular 2° Feira!");
     break;
-case 1: printf("Não circular 6° Feira!");
+case 1: printf("Não circular 2° Feira!");
     break;
-case 2: printf("Não circular 6° Feira!");
+case 2: printf("Não circular 2° Feira!");
     break;
 case 3: printf("Não circular 3° Feira!");
     break;
