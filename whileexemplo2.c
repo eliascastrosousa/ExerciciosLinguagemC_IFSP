@@ -1,4 +1,4 @@
-*Exibir números de 1 até o valor definido pelo usuário*/
+/*Exibir números de 1 até o valor definido pelo usuário*/
 #include <stdio.h>
 #include <locale.h>
 main(){

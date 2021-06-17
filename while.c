@@ -7,7 +7,7 @@ main(){
 
 contador = 1;
 while (contador <=10){
-    printf("\t\t\t\t%d\n",contador);
+    printf("%d\n",contador);
     contador ++;
 }
 
