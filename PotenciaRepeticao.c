@@ -10,33 +10,23 @@ main(){
 setlocale(LC_ALL,"Portuguese");
 
 float base, potencia;
-int expoente, zero;
-zero = 0;
+int expoente, contador;
+
+contador=1;
+
 printf("Digite um número: "); // Primeiro número
 scanf("%f",&base);
 
-printf("Digite o Segundo número (expoente:) "); //Expoente
+printf("Digite o Segundo número (expoente): "); // Expoente
 scanf("%d", &expoente);
 
-while(expoente >0){
-    potencia = base*base;
-    expoente--;
-    printf("\t%d\n",potencia);
+potencia = base;
+
+while(contador < expoente){ //enquanto o contador for menor que o expoente:
+    potencia = potencia*expoente;
+    contador++;
+    printf("%.0f X %d = %.0f\n", base, expoente, potencia);
 }
+printf("A base %.0f elevado a %d é igual a: %.0f",base, expoente, potencia);
 
 }
-
-/*
-for(potencia=base*base; expoente > zero; expoente-- ){
-    printf("\t%d\n",potencia);
-}
-
-}
-do{
-    potencia = base*base;
-    printf("\t%d\n",potencia);
-    expoente--;
-} while (expoente > 0);
-
-	printf("fim");
-*/
