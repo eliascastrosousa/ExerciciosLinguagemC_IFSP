@@ -8,13 +8,18 @@
  setlocale(LC_ALL, "portuguese");
 
  int count=0, num, soma=0;
- while(count<15){
+
+ while(count<5){
     printf("Digite um número: ");
     scanf("%d", &num);
-    count++;
+
     if (num >= 5){
-        soma ++;
+        soma++;
+        count++;
+    }else {
+        count++;
     }
  }
+ printf("Dos 5 numeros digitados, %d deles são maiores ou iguais a 5.",soma);
 
  }
