@@ -20,11 +20,11 @@ scanf("%d", &inf);
 printf("Digite o Limite Superior: ");
 scanf("%d", &sup);
 
-printf("O numero Inferior %d e o numero superior %d tem os seguintes numeros pares: \n", inf, sup);
+printf("Entre o numero %d e %d temos os seguintes números pares: \n", inf, sup);
 
 while (inf <= sup ) {
     if (inf%2 == 0){
-            printf("O numero %d \n ", inf);
+            printf("%d \n",inf);
             soma += inf;
             inf++;
 
@@ -32,5 +32,5 @@ while (inf <= sup ) {
             inf++;
     }
 }
-printf("E a soma de todos os numeros é igual a: %d", soma);
+printf("A soma de todos os números pares é igual a: %d", soma);
 }
