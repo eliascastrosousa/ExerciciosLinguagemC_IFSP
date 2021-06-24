@@ -45,11 +45,11 @@ while (opcao != 0){
     } //fim switch
 
 } //fim while
-printf("Rede Social         N° de alunos                %% \n");
-printf("Instagram               %.2f                  %.2f \n", inst, ((inst/votos)*100));
-printf("Twitter                 %.2f                  %.2f \n", twi, ((twi/votos)*100));
-printf("Facebook                %.2f                  %.2f \n", face, ((face/votos)*100));
-printf("Outros                  %.2f                  %.2f \n", outros, ((outros/votos)*100));
+printf("Rede Social         N° de alunos                %%  \n");
+printf("Instagram               %.2f                  %.2f  \n", inst, ((inst/votos)*100));
+printf("Twitter                 %.2f                  %.2f  \n", twi, ((twi/votos)*100));
+printf("Facebook                %.2f                  %.2f  \n", face, ((face/votos)*100));
+printf("Outros                  %.2f                  %.2f  \n", outros, ((outros/votos)*100));
 
 } //fim bloco main
 
