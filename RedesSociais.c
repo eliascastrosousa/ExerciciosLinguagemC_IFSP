@@ -43,13 +43,18 @@ while (opcao != 0){
         printf("\n\n Numero invalido! Tente novamente! \n\n");
 
     } //fim switch
-
 } //fim while
-printf("Rede Social         N° de alunos                %%  \n");
-printf("Instagram               %.2f                  %.2f  \n", inst, ((inst/votos)*100));
-printf("Twitter                 %.2f                  %.2f  \n", twi, ((twi/votos)*100));
-printf("Facebook                %.2f                  %.2f  \n", face, ((face/votos)*100));
-printf("Outros                  %.2f                  %.2f  \n", outros, ((outros/votos)*100));
+
+system("cls");
+
+printf("\n\nRede Social         N° de alunos                %%  \n");
+printf("-------------------------------------------------------\n");
+printf("Instagram               %.0f                    %.1f  \n", inst, ((inst/votos)*100));
+printf("Twitter                 %.0f                    %.1f  \n", twi, ((twi/votos)*100));
+printf("Facebook                %.0f                    %.1f  \n", face, ((face/votos)*100));
+printf("Outros                  %.0f                    %.1f  \n", outros, ((outros/votos)*100));
+printf("-------------------------------------------------------\n");
+printf("Totais                                         100%%  \n");
 
 } //fim bloco main
 
