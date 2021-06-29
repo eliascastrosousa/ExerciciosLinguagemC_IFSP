@@ -10,12 +10,12 @@ Se quantidade > 10 o desconto será de 5% */
 
 main(){
 setlocale(LC_ALL, "portuguese");
-char prod;
-float price, total, discount;
+char prod[50];
+float price, total, discount, totaldis;
 int amount ;
 
 printf("\nDigite o nome do produto: ");
-scanf("%c", &prod);
+gets(prod);
 
 printf("\nDigite o valor: ");
 scanf("%f", &price);
@@ -26,18 +26,19 @@ scanf("%d", &amount);
 total = amount*price;
 
 if(amount <= 5){
-        discount = total-(total*0.02);
-        printf("Total a pagar: %.2f ", discount);
-
+        discount = total*0.02;
+        totaldis = total-discount;
+        printf("Produto: %s \nDesconto: %.2f \nTotal a pagar: %.2f ",prod ,discount ,totaldis);
 }else if(amount <= 10){
-        discount = total-(total*0.03);
-        printf("Total a pagar: %.2f ", discount);
+        discount = (total*0.03);
+        totaldis = total-discount;
+        printf("Produto: %s \nDesconto: %.2f \nTotal a pagar: %.2f ",prod,discount, totaldis);
 
 }else if (amount > 10){
-        discount = total-(total*0.05);
-        printf("Total a pagar: %.2f ", discount);
+        discount = ( total*0.05);
+        totaldis = total-discount;
+        printf("Produto: %s \nDesconto: %.2f \nTotal a pagar: %.2f ", prod,discount, totaldis);
+}else{
+        printf("ALGO ERRADO");
 }
-
-
-
 }
