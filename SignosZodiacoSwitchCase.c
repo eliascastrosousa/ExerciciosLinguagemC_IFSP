@@ -115,5 +115,7 @@ case 1: //janeiro
 
     default: printf("valor invalido!");
 }
+system("PAUSE");
+
 return 0;
 }
