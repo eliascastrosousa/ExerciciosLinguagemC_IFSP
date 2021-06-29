@@ -7,24 +7,18 @@ Se quantidade > 10 o desconto será de 5% */
 
 #include <stdio.h>
 #include <locale.h>
-
 main(){
 setlocale(LC_ALL, "portuguese");
 char prod[50];
 float price, total, discount, totaldis;
 int amount ;
-
 printf("\nDigite o nome do produto: ");
 gets(prod);
-
 printf("\nDigite o valor: ");
 scanf("%f", &price);
-
 printf("\nDigite a quantidade: ");
 scanf("%d", &amount);
-
 total = amount*price;
-
 if(amount <= 5){
         discount = total*0.02;
         totaldis = total-discount;

@@ -13,16 +13,12 @@
 main(){
 setlocale(LC_ALL, "portuguese");
 int num, year, year_ingress, years_old, work;
-
 printf("Digite o número do empregado(Código):  ");
 scanf("%d", &num);
-
 printf("Digite o ano de nascimento:  ");
 scanf("%d", &year);
-
 printf("Digite o ano de seu ingresso na empresa:  ");
 scanf("%d", &year_ingress);
-
 years_old = 2021-year;
 work = 2021-year_ingress;
 if(years_old >= 65){
@@ -34,6 +30,4 @@ if(years_old >= 65){
 }else{
     printf("Não Requerer aposentadoria");
 }
-
-system("pause");
 }

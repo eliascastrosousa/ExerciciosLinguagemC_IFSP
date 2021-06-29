@@ -22,13 +22,4 @@ if (financing <= wageplus){
     printf("EMPRESTIMO CONCEDIDO");
 }else {
 printf("EMPRESTIMO NEGADO");
-}
-
-
-
-
-
-
-
-
-}
+}}
