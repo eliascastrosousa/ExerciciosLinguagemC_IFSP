@@ -10,11 +10,9 @@ Ex.: 2, 3, 11, 12, 21, 22, 23 = a) 28%;     b) 28%;     c) 42% */
 
 main(){
 setlocale(LC_ALL, "portuguese");
-
-
 float a_avg, b_avg, c_avg,quantity, count=1,classe_a=0, classe_b=0, classe_c=0;
-
-while(count<=5){
+char tecla;
+while(tecla == 'n'){
     printf("\n\nAluno %.0f, Digite quantas vezes você utilizou o Restaurante no ultimo mês: ", count);
     scanf("%f",&quantity);
     count++;
