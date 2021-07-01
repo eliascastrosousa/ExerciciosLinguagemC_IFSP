@@ -12,7 +12,7 @@ main(){
 setlocale(LC_ALL, "portuguese");
 float a_avg, b_avg, c_avg,quantity, count=1,classe_a=0, classe_b=0, classe_c=0;
 char tecla;
-while(tecla == 'n'){
+while(count<=10){
     printf("\n\nAluno %.0f, Digite quantas vezes você utilizou o Restaurante no ultimo mês: ", count);
     scanf("%f",&quantity);
     count++;
@@ -20,7 +20,7 @@ while(tecla == 'n'){
         classe_a++;
     }else if (quantity > 10 && quantity <=15){
         classe_b++;
-    }else if (quantity > 15 && quantity <=20){
+    }else if (quantity > 15){
         classe_c++;
     }else{
         printf("valor invalido");

@@ -17,11 +17,10 @@
 
  while(result >= 1){
     result = result/2;
-    printf("%.2f \n",result);
     count++;
 
  }
-printf("%.2f / 2: %.2f \n",result*2, result);
+printf("\n\n%.2f / 2: %.2f \n",result*2, result);
 printf("O numero %.0f foi dividido %d vezes até chegar em 1.\n", num, count);
 
 
