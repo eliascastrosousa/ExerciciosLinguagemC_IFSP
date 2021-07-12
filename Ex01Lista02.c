@@ -8,15 +8,45 @@ verificando se ele existe entre os números que já fornecidos. Exiba na tela o ve
 #include <stdio.h>
 #include <locale.h>
 #define TAM 10
-int vetor1[TAM],vetor2[TAM],count,count2;
 
+int vetor1[TAM],vetor2[TAM],count,count2;
 main(){
-    for(count=1;count<=TAM;count++){
-        printf("\nDigite o valor número %d: ",count);
-        scanf("%d",&vetor[count]);
+setlocale(LC_ALL,"portuguese");
+    do{
+printf("\nDigite um Número: ");
+scanf("%d",&vetor1[count]);
+
+vetor2[count]= vetor1[count];
+}while(count=0);
+
+for(count=1; count<=9; count++){
+
+printf("\nDigite um Número: "); // primeiro laço for
+scanf("%d",&vetor1[count]);
+
+for(count2=0; count2<TAM; count2++){ // segundo laço for
+
+    if(vetor2[count2]==vetor1[count]){
+
+        printf("\nNUMERO JÁ DIGITADO!!");
+
+        printf("\nPor favor, digite outro número: ");
+        scanf("%d",&vetor1[count]);
     }
-    printf("\n");
-    for(count2=1;count2<=TAM;count2++){
-        printf("%d ",vetor[count2]);
+    if(vetor2[count2] == vetor1[count]){
+
+        printf("\nNUMERO JÁ DIGITADO!!");
+
+        printf("\nPor favor, digite outro número: ");
+        scanf("%d",&vetor1[count]);
+    }
+    vetor2[count2]=vetor1[count];
+}//fim do segundo laço
+}//fim do primeiro
+
+printf("\nEstes São os Valores inseridos:  ");
+
+for(count=0; count<TAM; count++){
+    printf("%d\n",vetor1[count]);
 }
-}
+} //fim do bloco main

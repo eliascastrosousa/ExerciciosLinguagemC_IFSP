@@ -3,7 +3,7 @@
 #define TAM 5
 
 int vetor[TAM],c;
-float media,maior=0,menor=0,soma;
+float media,maior,menor,soma;
 
 main(){
 setlocale(LC_ALL,"portuguese");
