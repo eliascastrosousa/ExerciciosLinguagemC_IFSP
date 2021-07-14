@@ -47,6 +47,6 @@ for(count2=0; count2<TAM; count2++){ // segundo laço for
 printf("\nEstes São os Valores inseridos:  ");
 
 for(count=0; count<TAM; count++){
-    printf("%d\n",vetor1[count]);
+    printf("\n%d",vetor1[count]);
 }
 } //fim do bloco main
