@@ -12,21 +12,19 @@ setlocale(LC_ALL,"portuguese");
 int matrizA[5][4]={0};
 int matrizB[5][4]={0};
 int fatorial[5][4]={0};
-int a,b;
+int a,b,fat;
 
 for(a=0;a<5; a++){
         for(b=0;b<4; b++){
             printf("\nDigite o elemento da Matriz A Linha %d Coluna %d: ",a,b);
             scanf("%d",&matrizA[a][b]);
-            matrizB[a][b] = matrizA[a][b];
-            fatorial[5][4]= matrizA[a][b];
-            while(fatorial[a][b]>1){
-                matrizB[a][b] = matrizB[a][b]*fatorial[a][b]--;
-            }
         }
     }
 
-    // for para criar
+for(fat = 1; matrizA[a][b] > 1; matrizA[a][b] = matrizA[a][b]-1){
+                fat = fat*matrizA[a][b];
+                matrizB[a][b9] = fat;
+            }
 
 printf("\nElementos da Matriz B: \n\n");
 for(a=0;a<5; a++){

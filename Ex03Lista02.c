@@ -21,10 +21,10 @@ for(a=0; a<aluno; a++){
     }
   }
   for(a=0; a<aluno; a++){
-    printf("ID Aluno: %.0f\n",matriz[x][b]);
-    x++;
+    printf("ID Aluno: %.0f\n",matriz[a][b]);
+
     for(b=0; b<altura; b++){
             printf("Altura Aluno: %.2f\n",matriz[a][b]);
     }
-}
+  }
 }

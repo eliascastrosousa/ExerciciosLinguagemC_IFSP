@@ -27,7 +27,7 @@ for(a=0;a<5; a++){
             scanf("%d",&matrizB[a][b]);
         }
     }
-printf("Elementos da Matriz C: \n");
+printf("\nElementos da Matriz C: \n\n");
 for(a=0;a<5; a++){
         for(b=0;b<=2; b++){
             matrizC[a][b] = (matrizA[a][b]+matrizB[a][b]);
