@@ -4,6 +4,7 @@ cada elemento correspondente da matriz A . Apresentar ao final as matrizes A e B
 
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 
 main(){
 
@@ -11,26 +12,45 @@ setlocale(LC_ALL,"portuguese");
 
 int matrizA[5][4]={0};
 int matrizB[5][4]={0};
-int fatorial[5][4]={0};
-int a,b,fat;
+int fatorial, c, cc;
 
-for(a=0;a<5; a++){
-        for(b=0;b<4; b++){
-            printf("\nDigite o elemento da Matriz A Linha %d Coluna %d: ",a,b);
-            scanf("%d",&matrizA[a][b]);
+    //setlocale(LC_ALL, "portuguese");
+    //int A[5][4], B[5][4], fat;
+
+for(c =0; c<5; c++){
+    for(cc = 0; cc<4; cc++){
+        printf("Digite o Valor da matrizA[%d][%d]: ", c,cc);
+        scanf("%d", &matrizA[c][cc]);
+        }
+    }printf("\n");
+
+printf("Resultado da Primeira Matriz: \n\n ");
+
+for(c=0; c<5; c++){
+    for(cc =0; cc<4; cc++){
+        printf("[%d]", matrizA[c][cc]);
+            if(cc ==3){
+                printf("\n");
+            }
         }
     }
+printf("\n");
 
-for(fat = 1; matrizA[a][b] > 1; matrizA[a][b] = matrizA[a][b]-1){
-                fat = fat*matrizA[a][b];
-                matrizB[a][b9] = fat;
+for(c = 0; c<5; c++){
+    for(cc=0; cc<4; cc++){
+        for(fatorial = 1; matrizA[c][cc] > 1; matrizA[c][cc] = matrizA[c][cc]-1){
+            fatorial = (fatorial*matrizA[c][cc]);
+            matrizB[c][cc] = fatorial;
             }
-
-printf("\nElementos da Matriz B: \n\n");
-for(a=0;a<5; a++){
-        for(b=0;b<4; b++){
-            printf("%d ",matrizB[a][b]);
         }
-        printf("\n");
+    }
+printf("RESULTADO: \n\n");
+for(c = 0;c<5;c++){
+    for(cc = 0; cc < 4; cc++){
+        printf("[%d]", matrizB[c][cc]);
+        if(cc == 3){
+            printf("\n");
+            }
+        }
     }
 }

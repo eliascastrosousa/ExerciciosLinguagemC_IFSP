@@ -3,44 +3,25 @@ O programa deverá apresentar a menor, a maior e a média das temperaturas lidas. 
 
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
-int main()
-{
-    setlocale(LC_ALL, "Portuguese");
-    int A[5][4], B[5][4], fat;
+#define TAM 5
 
-    for(int i =0; i<5; i++){
-        for(int j = 0; j<4; j++){
-            printf("A[%d][%d]", i,j);
-            scanf("%d", &A[i][j]);
-        }
-    }
-    printf("\n");
-     for(int i = 0;i<5;i++){
-        for(int j = 0; j < 4; j++){
-            printf("[%d]", A[i][j]);
-            if(j == 3){
-                printf("\n");
-            }
-        }
-    }
-    printf("\n");
-    for(int i = 0; i<5;i++){
-        for(int j=0; j<4;j++){
-            for(fat = 1; A[i][j] > 1; A[i][j] = A[i][j]-1){
-                fat = fat*A[i][j];
-                B[i][j] = fat;
-            }
-        }
-    }
+int c;
+float media,maior,menor,soma,vetor[TAM];
 
-    for(int i = 0;i<5;i++){
-        for(int j = 0; j < 4; j++){
-            printf("[%d]", B[i][j]);
-            if(j == 3){
-                printf("\n");
-            }
-        }
+main(){
+setlocale(LC_ALL,"portuguese");
+for(c=1;c<=TAM;c++){
+    printf("Digite a altura %d: ",c);
+    scanf("%f",&vetor[c]);
+    soma+=vetor[c];
+    menor = vetor[c];
+
+    if(vetor[c]>maior){
+        maior = vetor[c];
     }
+}
+
+printf("Maior: %.0f\n",maior);
+
 }
